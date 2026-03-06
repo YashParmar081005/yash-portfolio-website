@@ -108,7 +108,7 @@ const projectsData = {
                 { name: "Streamlit", bg: "rgba(255,75,75,0.15)", color: "#ff4b4b" }
             ],
             github: "https://github.com/YashParmar081005/movie-recommendations-system-ml-project",
-            live: "#",
+            live: "https://youtu.be/xmqriP4KPf8",
             delay: "200"
         },
         {
