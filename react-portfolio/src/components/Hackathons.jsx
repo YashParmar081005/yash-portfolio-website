@@ -1,4 +1,4 @@
-import { FaTrophy, FaMedal } from 'react-icons/fa';
+import { FaTrophy, FaMedal, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Hackathons() {
     return (
@@ -23,8 +23,9 @@ export default function Hackathons() {
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
                                 <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>React</span>
-                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Node.js</span>
+                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Node Js</span>
                                 <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>MongoDB</span>
+                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Express Js</span>
                             </div>
                             <div className="flex items-center gap-2 text-sm" style={{ color: '#f59e0b' }}>
                                 <FaTrophy /><span className="font-semibold">College Level Hackathon</span>
@@ -41,12 +42,18 @@ export default function Hackathons() {
                                 An automated rental management solution built on Odoo — streamlining property listings, rent tracking, maintenance requests & tenant onboarding.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Odoo</span>
-                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Python</span>
-                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>PostgreSQL</span>
+                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>React</span>
+                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Node Js</span>
+                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>MongoDB</span>
+                                <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Express Js</span>
                             </div>
-                            <div className="flex items-center gap-2 text-sm" style={{ color: '#f59e0b' }}>
-                                <FaMedal /><span className="font-semibold">OdooXGCET Hackathon</span>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2 text-sm" style={{ color: '#f59e0b' }}>
+                                    <FaMedal /><span className="font-semibold">OdooXGCET Hackathon</span>
+                                </div>
+                                <a href="https://youtu.be/d9yot-hHn4g" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[#f59e0b] hover:text-white">
+                                    <FaExternalLinkAlt /> Video Demo
+                                </a>
                             </div>
                         </div>
 

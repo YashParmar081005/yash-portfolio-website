@@ -61,7 +61,7 @@ const projectsData = {
                 { name: "shadcn", bg: "rgba(200,80,250,0.15)", color: "#f1f1f1" }
             ],
             github: "https://github.com/YashParmar081005/t3-chat",
-            live: "#",
+            live: "https://youtu.be/w2JrTLCcS2Y",
             delay: "400"
         }
     ],
@@ -93,7 +93,7 @@ const projectsData = {
                 { name: "Flask", bg: "rgba(0,212,255,0.1)", color: "#00d4ff" }
             ],
             github: "https://github.com/YashParmar081005/Bengaluru-real-estate-price-predictions-ml-project",
-            live: "#",
+            live: "https://youtu.be/IOWTTGMngvY",
             delay: "150"
         },
         {
@@ -123,7 +123,7 @@ const projectsData = {
                 { name: "Python", bg: "rgba(55,118,171,0.2)", color: "#60a5fa" }
             ],
             github: "https://github.com/YashParmar081005/spem-mail-detection-ml-project",
-            live: "#",
+            live: "https://youtu.be/EFSjN4fwXq4",
             delay: "250"
         },
         {
@@ -138,7 +138,7 @@ const projectsData = {
                 { name: "Pandas", bg: "rgba(21,4,88,0.5)", color: "#a78bfa", border: "1px solid #7c3aed" }
             ],
             github: "https://github.com/YashParmar081005/language-detection-ml-project",
-            live: "#",
+            live: "https://youtu.be/zC2NNjWocIk",
             delay: "300"
         },
         {
@@ -153,7 +153,7 @@ const projectsData = {
                 { name: "NumPy", bg: "rgba(77,171,207,0.2)", color: "#4dabcf" }
             ],
             github: "https://github.com/YashParmar081005/Heart-Stroke-Prediction-ML-",
-            live: "#",
+            live: "https://youtu.be/nCXw34xgmMo",
             delay: "350"
         }
     ],
@@ -279,7 +279,7 @@ const projectsData = {
                 { name: "MongoDB", bg: "rgba(71,162,72,0.15)", color: "#4CAF50" }
             ],
             github: "#",
-            live: "#",
+            live: "https://youtu.be/KcPFkiY6uJ4",
             delay: "250"
         }
     ]
@@ -308,7 +308,7 @@ const ProjectCard = ({ project }) => (
             {project.live && project.live !== '#' && (
                 <a href={project.live} target="_blank" rel="noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[var(--blue)]">
-                    {project.title.includes('Video Demo') ? <FaExternalLinkAlt /> : <FaExternalLinkAlt />} {project.title.includes('Video') ? 'Video Demo' : 'Live Site'}
+                    <FaExternalLinkAlt /> {project.live.includes('youtu') ? 'Video Demo' : 'Live Site'}
                 </a>
             )}
         </div>
