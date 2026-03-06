@@ -22,7 +22,7 @@ const projectsData = {
             id: "fs2",
             title: "Waerly",
             desc: "A modern clothing e-commerce platform with real-time inventory, cart, and seamless checkout.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "wearly.png",
             icon: "👗",
             tech: [
                 { name: "React", bg: "rgba(0,212,255,0.15)", color: "#00d4ff" },
@@ -30,7 +30,7 @@ const projectsData = {
                 { name: "TailwindCSS", bg: "rgba(56,189,248,0.15)", color: "#38bdf8" }
             ],
             github: "#",
-            live: "#",
+            live: "https://youtu.be/OSZB_h7g0jo",
             delay: "200"
         },
         {
@@ -51,7 +51,7 @@ const projectsData = {
         {
             id: "fs4",
             title: "T3 Chat Clone",
-            desc: "A modern, real-time chat application built with the T3 Stack, featuring instant messaging and elegant UI.",
+            desc: "Built an AI-powered T3 Chat Clone that allows users to interact with multiple LLM models via OpenRouter with a seamless chat interface Supports chat creation, deletion, search, and AI-based code generation using a scalable full-stack architecture.",
             img: "t3chat.png",
             icon: "💬",
             tech: [
@@ -89,8 +89,9 @@ const projectsData = {
             icon: "🏠",
             tech: [
                 { name: "Scikit-learn", bg: "rgba(247,147,30,0.15)", color: "#f7931e" },
-                { name: "Pandas", bg: "rgba(21,4,88,0.5)", color: "#a78bfa", border: "1px solid #7c3aed" },
-                { name: "Flask", bg: "rgba(0,212,255,0.1)", color: "#00d4ff" }
+                { name: "Pandas", bg: "rgba(21,4,88,0.5)", color: "#a78bfa" },
+                { name: "Streamlit", bg: "rgba(255,75,75,0.15)", color: "#ff4b4b" },
+                { name: "Python", bg: "rgba(55,118,171,0.2)", color: "#60a5fa" }
             ],
             github: "https://github.com/YashParmar081005/Bengaluru-real-estate-price-predictions-ml-project",
             live: "https://youtu.be/IOWTTGMngvY",
@@ -135,7 +136,7 @@ const projectsData = {
             tech: [
                 { name: "ML", bg: "rgba(255,255,255,0.1)", color: "#ddd" },
                 { name: "Python", bg: "rgba(55,118,171,0.2)", color: "#60a5fa" },
-                { name: "Pandas", bg: "rgba(21,4,88,0.5)", color: "#a78bfa", border: "1px solid #7c3aed" }
+                { name: "Pandas", bg: "rgba(21,4,88,0.5)", color: "#a78bfa" }
             ],
             github: "https://github.com/YashParmar081005/language-detection-ml-project",
             live: "https://youtu.be/zC2NNjWocIk",
@@ -233,7 +234,7 @@ const projectsData = {
                 { name: "Stability AI", bg: "rgba(180,100,250,0.15)", color: "#b464fa" }
             ],
             github: "https://github.com/YashParmar081005/Promage",
-            live: "#",
+            live: "https://www.linkedin.com/posts/yash-parmar-a907b2320_promage-geminiai-stabilityai-activity-7341851862955900928-XpK5?utm_source=share&utm_medium=member_android&rcm=ACoAAFFGoowBdkTQTfTuS_W-2Fkw7ghwu4LmYUs",
             delay: "100"
         },
         {
@@ -248,7 +249,7 @@ const projectsData = {
                 { name: "pyttsx3", bg: "rgba(100,200,100,0.15)", color: "#64c864" }
             ],
             github: "#",
-            live: "#",
+            live: "https://www.linkedin.com/posts/yash-parmar-a907b2320_python-ai-voiceassistant-activity-7333861836624158720-Dy2O?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFFGoowBdkTQTfTuS_W-2Fkw7ghwu4LmYUs&utm_campaign=copy_link",
             delay: "150"
         },
         {
@@ -270,7 +271,7 @@ const projectsData = {
             id: "mp4",
             title: "Wanderlust (Airbnb Clone)",
             desc: "A full-featured property listing and booking platform replicating core Airbnb functionalities.",
-            img: "wanderlust.png",
+            img: "wonderlust.png",
             icon: "🌍",
             tech: [
                 { name: "React", bg: "rgba(97,218,251,0.15)", color: "#61dafb" },
@@ -308,7 +309,7 @@ const ProjectCard = ({ project }) => (
             {project.live && project.live !== '#' && (
                 <a href={project.live} target="_blank" rel="noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[var(--blue)]">
-                    <FaExternalLinkAlt /> {project.live.includes('youtu') ? 'Video Demo' : 'Live Site'}
+                    <FaExternalLinkAlt /> {project.live.includes('youtu') || project.live.includes('linkedin') ? 'Video Demo' : 'Live Site'}
                 </a>
             )}
         </div>

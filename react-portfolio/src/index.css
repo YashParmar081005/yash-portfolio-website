@@ -72,7 +72,6 @@ code,
   pointer-events: none;
   z-index: 9999;
   transition: transform .1s;
-  box-shadow: 0 0 15px var(--blue), 0 0 30px var(--blue);
 }
 
 #cursor-ring {

@@ -254,7 +254,9 @@ export default function Contact() {
                         </a>
                     </div>
                     <p className="text-[var(--text-secondary)] text-sm font-medium">
-                        © {new Date().getFullYear()} Portfolio. Crafted with <FaHeart className="inline text-red-500 animate-pulse mx-1" /> by <span className="gradient-text font-black tracking-wider">YASH PARMAR</span>
+                        © {new Date().getFullYear()} Portfolio
+                        <br />
+                        Crafted with <FaHeart className="inline text-red-500 animate-pulse mx-1" /> by <span className="gradient-text font-black tracking-wider">YASH PARMAR</span>
                     </p>
                 </div>
             </footer>
