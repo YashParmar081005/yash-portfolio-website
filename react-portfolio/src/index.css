@@ -332,6 +332,7 @@ html[data-theme="light"] .avatar-img {
   transition: all .3s;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero-btn-primary::before {
@@ -341,6 +342,7 @@ html[data-theme="light"] .avatar-img {
   background: linear-gradient(135deg, var(--purple), var(--blue));
   opacity: 0;
   transition: opacity .3s;
+  z-index: -1;
 }
 
 .hero-btn-primary:hover::before {

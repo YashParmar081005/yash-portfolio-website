@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { FaDownload } from 'react-icons/fa';
 
 const CountUp = ({ end, duration = 2000 }) => {
     const [count, setCount] = useState(0);
@@ -58,6 +59,11 @@ export default function About() {
                     <div className="flex items-center gap-3">
                         <span className="w-3 h-3 rounded-full bg-green-400" style={{ animation: 'pulse-dot 2s infinite' }}></span>
                         <span className="text-green-400 text-sm font-semibold">Available for freelance & full-time roles</span>
+                    </div>
+                    <div className="mt-8">
+                        <a href="/resume.pdf" download className="hero-btn-primary inline-flex items-center gap-2 px-8 py-3 rounded-xl font-bold text-white transition-all shadow-lg hover:shadow-[0_0_20px_rgba(0,212,255,0.4)]">
+                            <FaDownload /> Download Resume
+                        </a>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-5" data-aos="fade-left">

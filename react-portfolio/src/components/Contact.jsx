@@ -78,9 +78,9 @@ export default function Contact() {
                     <div className="grid md:grid-cols-2 gap-4 mb-8" data-aos="fade-up" data-aos-delay="50">
                         <a href="mailto:yashparmarh97236@gmail.com"
                             className="glass rounded-xl p-5 flex items-center gap-4 group hover:border-[var(--blue)] transition-all duration-300 no-underline">
-                            <div className="w-12 h-12 rounded-lg flex items-center justify-center text-white shadow-lg"
-                                style={{ background: 'linear-gradient(135deg, #ea4335, #ff6b6b)' }}>
-                                <FaEnvelope size={20} />
+                            <div className="w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"
+                                style={{ background: 'linear-gradient(135deg, #ea4335, #ff6b6b)', color: '#ffffff' }}>
+                                <FaEnvelope size={20} color="#ffffff" />
                             </div>
                             <div>
                                 <p className="text-xs text-[var(--text-secondary)] font-semibold mb-1">Email Me Directly</p>
@@ -91,9 +91,9 @@ export default function Contact() {
                         </a>
                         <a href="https://linkedin.com/in/yash-parmar-a907b2320" target="_blank" rel="noreferrer"
                             className="glass rounded-xl p-5 flex items-center gap-4 group hover:border-[var(--blue)] transition-all duration-300 no-underline">
-                            <div className="w-12 h-12 rounded-lg flex items-center justify-center text-white shadow-lg"
-                                style={{ background: 'linear-gradient(135deg, #0077b5, #00a0dc)' }}>
-                                <FaLinkedinIn size={20} />
+                            <div className="w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"
+                                style={{ background: 'linear-gradient(135deg, #0077b5, #00a0dc)', color: '#ffffff' }}>
+                                <FaLinkedinIn size={20} color="#ffffff" />
                             </div>
                             <div>
                                 <p className="text-xs text-[var(--text-secondary)] font-semibold mb-1">Connect on LinkedIn</p>

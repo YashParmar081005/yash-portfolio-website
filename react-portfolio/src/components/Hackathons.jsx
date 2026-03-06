@@ -27,8 +27,13 @@ export default function Hackathons() {
                                 <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>MongoDB</span>
                                 <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Express Js</span>
                             </div>
-                            <div className="flex items-center gap-2 text-sm" style={{ color: '#f59e0b' }}>
-                                <FaTrophy /><span className="font-semibold">College Level Hackathon</span>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2 text-sm" style={{ color: '#f59e0b' }}>
+                                    <FaTrophy /><span className="font-semibold">College Level Hackathon</span>
+                                </div>
+                                <a href="#" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[#f59e0b] hover:text-white">
+                                    <FaExternalLinkAlt /> Certificate
+                                </a>
                             </div>
                         </div>
 
@@ -47,13 +52,18 @@ export default function Hackathons() {
                                 <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>MongoDB</span>
                                 <span className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: 'rgba(245,158,11,0.2)', color: '#f59e0b' }}>Express Js</span>
                             </div>
-                            <div className="flex items-center justify-between mt-2">
+                            <div className="flex items-center justify-between mt-2 flex-wrap gap-2">
                                 <div className="flex items-center gap-2 text-sm" style={{ color: '#f59e0b' }}>
                                     <FaMedal /><span className="font-semibold">OdooXGCET Hackathon</span>
                                 </div>
-                                <a href="https://youtu.be/d9yot-hHn4g" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[#f59e0b] hover:text-white">
-                                    <FaExternalLinkAlt /> Video Demo
-                                </a>
+                                <div className="flex gap-2 w-full mt-2 lg:mt-0 lg:w-auto">
+                                    <a href="#" target="_blank" rel="noreferrer" className="flex-1 flex justify-center items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[#f59e0b] hover:text-white">
+                                        <FaExternalLinkAlt /> Certificate
+                                    </a>
+                                    <a href="https://youtu.be/d9yot-hHn4g" target="_blank" rel="noreferrer" className="flex-1 flex justify-center items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[#f59e0b] hover:text-white">
+                                        <FaExternalLinkAlt /> Video Demo
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
