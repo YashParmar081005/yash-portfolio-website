@@ -7,7 +7,7 @@ const projectsData = {
             id: "fs1",
             title: "Upasana SmartRead",
             desc: "A smart library management system for digital & physical book tracking with user dashboards.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "upasana.png",
             icon: "📚",
             tech: [
                 { name: "React", bg: "rgba(97,218,251,0.15)", color: "#61dafb" },
@@ -85,7 +85,7 @@ const projectsData = {
             id: "ml2",
             title: "Bengaluru Real Estate Prediction",
             desc: "ML regression model predicting Bengaluru property prices using location, area & BHK features.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "bamglore.jpeg",
             icon: "🏠",
             tech: [
                 { name: "Scikit-learn", bg: "rgba(247,147,30,0.15)", color: "#f7931e" },
@@ -101,7 +101,7 @@ const projectsData = {
             id: "ml3",
             title: "Movie Recommendation System",
             desc: "Content-based filtering engine recommending movies using cosine similarity & NLP features.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "movie.jpeg",
             icon: "🎬",
             tech: [
                 { name: "Python", bg: "rgba(55,118,171,0.2)", color: "#60a5fa" },
@@ -116,7 +116,7 @@ const projectsData = {
             id: "ml4",
             title: "Spam Mail Detection",
             desc: "NLP-powered binary classifier detecting spam emails using TF-IDF vectorization and Naive Bayes.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "spamham.jpeg",
             icon: "📧",
             tech: [
                 { name: "NLP", bg: "rgba(0,212,255,0.1)", color: "#00d4ff" },
@@ -131,7 +131,7 @@ const projectsData = {
             id: "ml5",
             title: "Language Detection",
             desc: "Multi-class ML model identifying 22+ languages from raw text using character n-gram features.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "language.jpeg",
             icon: "🌐",
             tech: [
                 { name: "ML", bg: "rgba(255,255,255,0.1)", color: "#ddd" },
@@ -146,7 +146,7 @@ const projectsData = {
             id: "ml6",
             title: "Heart Stroke Prediction",
             desc: "Clinical ML classifier predicting stroke risk from patient health metrics with high recall score.",
-            img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+            img: "heatstroke.jpeg",
             icon: "❤️",
             tech: [
                 { name: "ML", bg: "rgba(255,255,255,0.1)", color: "#ddd" },
