@@ -64,18 +64,18 @@ export default function Contact() {
 
     return (
         <>
-            <section id="contact" className="px-6 md:px-16 lg:px-24 py-24 bg-[var(--bg-secondary)] relative border-t border-[var(--glass-border)]">
+            <section id="contact" className="px-4 sm:px-6 md:px-16 lg:px-24 py-16 sm:py-24 bg-[var(--bg-secondary)] relative border-t border-[var(--glass-border)]">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-14" data-aos="fade-up">
                         <p className="mono text-sm mb-3 text-[var(--blue)]">// get in touch</p>
-                        <h2 className="text-4xl md:text-5xl font-black section-title mb-6">Let's Connect</h2>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black section-title mb-6">Let's Connect</h2>
                         <p className="text-[var(--text-secondary)] max-w-xl mx-auto font-medium">
                             Open for freelance opportunities, open-source collaborations, and engaging technical discussions. Drop a message!
                         </p>
                     </div>
 
                     {/* Quick Connect Cards */}
-                    <div className="grid md:grid-cols-2 gap-4 mb-8" data-aos="fade-up" data-aos-delay="50">
+                    <div className="grid sm:grid-cols-2 gap-4 mb-8" data-aos="fade-up" data-aos-delay="50">
                         <a href="mailto:yashparmarh97236@gmail.com"
                             className="glass rounded-xl p-5 flex items-center gap-4 group hover:border-[var(--blue)] transition-all duration-300 no-underline">
                             <div className="w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"
@@ -105,10 +105,10 @@ export default function Contact() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="glass rounded-2xl p-8 md:p-12 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div className="glass rounded-2xl p-6 sm:p-8 md:p-12 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[var(--blue)] to-[var(--purple)]"></div>
                         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-                            <div className="grid md:grid-cols-2 gap-6">
+                            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                                 <div>
                                     <label className="block text-sm font-bold mb-2 text-[var(--text-secondary)]">Name</label>
                                     <input
@@ -209,7 +209,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <footer className="border-t border-[var(--glass-border)] px-6 md:px-16 lg:px-24 py-12 relative z-10 bg-[var(--bg)]"
+            <footer className="border-t border-[var(--glass-border)] px-4 sm:px-6 md:px-16 lg:px-24 py-8 sm:py-12 relative z-10 bg-[var(--bg)]"
                 style={{ borderImage: 'linear-gradient(90deg, transparent, var(--blue), var(--purple), transparent) 1' }}>
                 <div className="max-w-6xl mx-auto text-center">
                     <div className="mono text-xl font-bold gradient-text mb-6">&lt; Portfolio /&gt;</div>

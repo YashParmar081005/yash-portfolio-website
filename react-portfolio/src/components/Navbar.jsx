@@ -93,9 +93,9 @@ export default function Navbar({ theme, toggleTheme }) {
 
     return (
         <>
-            <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, backdropFilter: scrolled ? 'blur(20px)' : 'none', WebkitBackdropFilter: scrolled ? 'blur(20px)' : 'none', background: scrolled ? 'var(--glass-bg)' : 'transparent', borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent', boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.12)' : 'none', transition: 'all 0.4s ease' }}>
-                <div style={{ padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <a href="#home" onClick={closeMobileMenu} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '20px', fontWeight: 'bold', background: 'linear-gradient(135deg, #00d4ff, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none' }}>
+            <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: scrolled ? 'var(--glass-bg)' : (theme === 'dark' ? 'rgba(6, 6, 16, 0.5)' : 'rgba(240, 244, 248, 0.5)'), borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent', boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.12)' : 'none', transition: 'all 0.4s ease' }}>
+                <div style={{ padding: '10px 12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} className="sm:!py-4 sm:!px-6">
+                    <a href="#home" onClick={closeMobileMenu} className="text-base sm:text-xl" style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 'bold', background: 'linear-gradient(135deg, #00d4ff, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none', whiteSpace: 'nowrap' }}>
                         &lt; YASH /&gt;
                     </a>
 
@@ -137,15 +137,15 @@ export default function Navbar({ theme, toggleTheme }) {
                     </div>
 
                     {/* Mobile hamburger */}
-                    <div className="lg:hidden flex items-center gap-3">
+                    <div className="lg:hidden flex items-center gap-2 sm:gap-3 flex-shrink-0">
                         <button
                             onClick={toggleTheme} title="Toggle theme"
-                            style={{ width: 36, height: 36, fontSize: '1rem', borderRadius: '50%', border: '2px solid var(--glass-border)', background: 'var(--glass-bg)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>
+                            style={{ width: 38, height: 38, minWidth: 38, minHeight: 38, fontSize: '1.1rem', borderRadius: '50%', border: '2px solid var(--glass-border)', background: 'var(--glass-bg)', backdropFilter: 'blur(10px)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>
                             {theme === 'dark' ? <FaMoon /> : <FaSun style={{ color: '#eab308' }} />}
                         </button>
                         <button
                             onClick={toggleMobileMenu}
-                            style={{ background: 'none', border: 'none', fontSize: '24px', color: theme === 'dark' ? '#e2e8f0' : '#1a1a2e', cursor: 'pointer' }}>
+                            style={{ background: 'var(--glass-bg)', border: '2px solid var(--glass-border)', borderRadius: '10px', width: 38, height: 38, minWidth: 38, minHeight: 38, fontSize: '20px', color: theme === 'dark' ? '#e2e8f0' : '#1a1a2e', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(10px)' }}>
                             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
                         </button>
                     </div>

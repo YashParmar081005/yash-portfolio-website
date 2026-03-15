@@ -40,11 +40,11 @@ const CountUp = ({ end, duration = 2000 }) => {
 
 export default function About() {
     return (
-        <section id="about" className="px-6 md:px-16 lg:px-24 py-24">
+        <section id="about" className="px-4 sm:px-6 md:px-16 lg:px-24 py-16 sm:py-24">
             <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div data-aos="fade-right">
                     <p className="mono text-sm mb-3" style={{ color: 'var(--blue)' }}>// about me</p>
-                    <h2 className="text-4xl md:text-5xl font-black mb-6 section-title">Who Am I?</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 section-title">Who Am I?</h2>
                     <p className="text-gray-400 leading-relaxed mb-6">
                         I'm a passionate <span className="text-white font-semibold">Full Stack Developer</span> and <span
                             className="text-white font-semibold">AI/ML Engineer</span> who loves turning complex problems into
@@ -66,20 +66,20 @@ export default function About() {
                         </a>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-5" data-aos="fade-left">
-                    <div className="glass rounded-2xl p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="100">
+                <div className="grid grid-cols-2 gap-3 sm:gap-5" data-aos="fade-left">
+                    <div className="glass rounded-2xl p-4 sm:p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="100">
                         <div className="stat-num gradient-text"><CountUp end={17} /></div>
                         <div className="text-gray-400 text-sm mt-1">Projects Built</div>
                     </div>
-                    <div className="glass rounded-2xl p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div className="glass rounded-2xl p-4 sm:p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="200">
                         <div className="stat-num gradient-text"><CountUp end={6} /></div>
                         <div className="text-gray-400 text-sm mt-1">ML Models</div>
                     </div>
-                    <div className="glass rounded-2xl p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div className="glass rounded-2xl p-4 sm:p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="300">
                         <div className="stat-num gradient-text"><CountUp end={2} /></div>
                         <div className="text-gray-400 text-sm mt-1">Hackathons</div>
                     </div>
-                    <div className="glass rounded-2xl p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div className="glass rounded-2xl p-4 sm:p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="400">
                         <div className="stat-num gradient-text"><CountUp end={28} /></div>
                         <div className="text-gray-400 text-sm mt-1">Technologies</div>
                     </div>

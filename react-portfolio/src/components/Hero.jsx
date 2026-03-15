@@ -40,17 +40,17 @@ export default function Hero({ theme }) {
         <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
             <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                 <div id="hero-greeting" className="text-gray-400 mono text-lg mb-2">Hello World! 👋</div>
-                <h1 id="hero-title" className="text-5xl md:text-7xl font-black mb-4 leading-tight">
+                <h1 id="hero-title" className="text-3xl sm:text-5xl md:text-7xl font-black mb-4 leading-tight">
                     Hi, I'm <span className="gradient-text">YASH PARMAR</span>
                 </h1>
-                <div className="text-2xl md:text-3xl font-bold mb-6 h-12">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 h-10 sm:h-12">
                     <span id="typed-text" style={{ color: 'var(--blue)' }}>{typedText}</span>
                     <span className="animate-pulse" style={{ color: 'var(--blue)' }}>|</span>
                 </div>
-                <p id="hero-sub" className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                <p id="hero-sub" className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
                     Crafting full-stack experiences & intelligent ML systems. Passionate about building products that matter — from scalable web apps to deep learning models.
                 </p>
-                <div id="hero-btns" className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div id="hero-btns" className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
                     <a href="#projects"
                         className="hero-btn-primary relative z-10 px-8 py-3 rounded-full font-bold text-white text-sm tracking-wide transition-all hover:scale-105 hover:shadow-lg"
                         style={{ boxShadow: '0 0 30px rgba(0,212,255,0.3)' }}>

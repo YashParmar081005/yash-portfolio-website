@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --bg: #060610;
   --bg-secondary: #0a0a1a;
@@ -790,6 +800,45 @@ html[data-theme="light"] textarea.form-input {
 html[data-theme="light"] .floating-particle {
   background: rgba(0, 150, 255, 0.3);
   box-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 480px) {
+  .stat-num {
+    font-size: 1.75rem;
+  }
+
+  .blob-1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .blob-2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .blob-3 {
+    width: 220px;
+    height: 220px;
+  }
+
+  #toast {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .section-title::after {
+    width: 50%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  .stat-num {
+    font-size: 2rem;
+  }
 }
 
 @keyframes float-up {

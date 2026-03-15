@@ -42,7 +42,7 @@ const SkillItem = ({ name, percent }) => {
         <div ref={ref} className="skill-card group relative p-4 rounded-3xl glass flex flex-col items-center justify-center gap-3 overflow-hidden cursor-default transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(0,212,255,0.3)]">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
 
-            <div className="relative flex items-center justify-center w-20 h-20 z-10">
+            <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 z-10">
                 <svg className="w-full h-full transform -rotate-90 filter drop-shadow-[0_0_8px_rgba(0,212,255,0.2)] group-hover:drop-shadow-[0_0_12px_rgba(0,212,255,0.6)] transition-all duration-300">
                     <circle cx="40" cy="40" r={radius} stroke="currentColor" strokeWidth="4" fill="transparent" className="text-gray-700/30" />
                     <circle cx="40" cy="40" r={radius} stroke="url(#gradient-skill)" strokeWidth="5" strokeLinecap="round" fill="transparent" strokeDasharray={circumference} strokeDashoffset={strokeDashoffset} className="transition-all duration-75 ease-linear" />
@@ -55,7 +55,7 @@ const SkillItem = ({ name, percent }) => {
                 </svg>
                 <div className="absolute flex flex-col items-center justify-center">
                     <div className="flex items-baseline">
-                        <span className="text-xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-300 group-hover:to-purple-300 transition-all duration-300">
+                        <span className="text-lg sm:text-xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-300 group-hover:to-purple-300 transition-all duration-300">
                             {progress}
                         </span>
                         <span className="text-[10px] text-gray-500 font-bold ml-0.5">%</span>
@@ -121,7 +121,7 @@ export default function Skills() {
     return (
         <>
             <div className="divider"></div>
-            <section id="skills" className="px-6 md:px-16 lg:px-24 py-24 relative overflow-hidden">
+            <section id="skills" className="px-4 sm:px-6 md:px-16 lg:px-24 py-16 sm:py-24 relative overflow-hidden">
                 <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none"></div>
 

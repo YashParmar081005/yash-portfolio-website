@@ -327,17 +327,17 @@ export default function Projects() {
     ];
 
     return (
-        <section id="projects" className="px-6 md:px-16 lg:px-24 py-24">
+        <section id="projects" className="px-4 sm:px-6 md:px-16 lg:px-24 py-16 sm:py-24">
             <div className="max-w-6xl mx-auto">
                 <div className="mb-14" data-aos="fade-up">
                     <p className="mono text-sm mb-3" style={{ color: 'var(--blue)' }}>// my work</p>
-                    <h2 className="text-4xl md:text-5xl font-black section-title">Projects</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black section-title">Projects</h2>
                 </div>
-                <div className="flex flex-wrap gap-6 mb-10 border-b border-white/10 pb-0" data-aos="fade-up">
+                <div className="flex gap-4 sm:gap-6 mb-10 border-b border-white/10 pb-0 overflow-x-auto scrollbar-hide" data-aos="fade-up">
                     {tabs.map(tab => (
                         <button
                             key={tab.id}
-                            className={`tab-btn text-lg font-bold pb-4 px-2 ${activeTab === tab.id ? 'active' : 'text-gray-400'}`}
+                            className={`tab-btn text-base sm:text-lg font-bold pb-4 px-2 whitespace-nowrap flex-shrink-0 ${activeTab === tab.id ? 'active' : 'text-gray-400'}`}
                             onClick={() => setActiveTab(tab.id)}
                         >
                             {tab.label}
@@ -345,7 +345,7 @@ export default function Projects() {
                     ))}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-[fadeInUp_0.4s_ease]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 animate-[fadeInUp_0.4s_ease]">
                     {projectsData[activeTab].map(project => (
                         <ProjectCard key={project.id} project={project} />
                     ))}

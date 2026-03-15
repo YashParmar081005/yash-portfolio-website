@@ -31,23 +31,23 @@ export default function TechStack() {
     return (
         <>
             <div className="divider"></div>
-            <section id="techstack" className="px-6 md:px-16 lg:px-24 py-24">
+            <section id="techstack" className="px-4 sm:px-6 md:px-16 lg:px-24 py-16 sm:py-24">
                 <div className="max-w-6xl mx-auto">
                     <div className="mb-14 text-center" data-aos="fade-up">
                         <p className="mono text-sm mb-3" style={{ color: 'var(--blue)' }}>// tools & technologies</p>
-                        <h2 className="text-4xl md:text-5xl font-black">Tech Stack</h2>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">Tech Stack</h2>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-3">
+                    <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
                         {techs.map((t, i) => (
                             <div
                                 key={i}
-                                className="tech-badge glass px-4 py-2 rounded-xl flex items-center gap-2"
+                                className="tech-badge glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl flex items-center gap-1.5 sm:gap-2"
                                 data-aos="zoom-in"
                                 data-aos-delay={(i % 10) * 50}
                                 style={{ border: `1px solid ${t.bg}` }}
                             >
                                 <i className={`fab ${t.icon}`} style={{ color: t.color }}></i>
-                                <span className="font-semibold text-sm">{t.name}</span>
+                                <span className="font-semibold text-xs sm:text-sm">{t.name}</span>
                             </div>
                         ))}
                     </div>
