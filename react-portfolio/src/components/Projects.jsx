@@ -219,6 +219,22 @@ const projectsData = {
             github: "#",
             live: "#",
             delay: "300"
+        },
+        {
+            id: "ai6",
+            title: "Ai-youtube-video-rag",
+            desc: "I have built an AI Video RAG system that can answer questions about any youtube video. It uses youtube-dl to download the video and then uses Whisper to transcribe the audio and then uses ChromaDB to store the embeddings and then uses LangChain to answer the questions about the video.",
+            img: "aiyoutuberag.png",
+            icon: "🔍",
+            tech: [
+                { name: "RAG", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
+                { name: "LangChain", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
+                { name: "FAISS", bg: "rgba(0,150,200,0.15)", color: "#0096c8" },
+                { name: "PDF", bg: "rgba(220,50,50,0.15)", color: "#dc3232" }
+            ],
+            github: "https://github.com/YashParmar081005/ai-video-rag",
+            live: "#",
+            delay: "300"
         }
     ],
     miniprojects: [
