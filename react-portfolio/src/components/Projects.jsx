@@ -224,7 +224,7 @@ const projectsData = {
             id: "ai6",
             title: "Ai-youtube-video-rag",
             desc: "I have built an AI Video RAG system that can answer questions about any youtube video. It uses youtube-dl to download the video and then uses Whisper to transcribe the audio and then uses ChromaDB to store the embeddings and then uses LangChain to answer the questions about the video.",
-            img: "aiyoutuberag.png",
+            img: "aityoutuberag.png",
             icon: "🔍",
             tech: [
                 { name: "RAG", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
@@ -232,7 +232,7 @@ const projectsData = {
                 { name: "Whisper", bg: "rgba(0,150,200,0.15)", color: "#0096c8" },
                 { name: "ChromaDB", bg: "rgba(220,50,50,0.15)", color: "#badc32ff" },
                 { name: "youtube-dl", bg: "rgba(220,50,50,0.15)", color: "#dc3232" },
-                { name: "servam api", bg: "rgba(227, 227, 227, 0.15)", color: "#000000ff" },
+                { name: "servam api", bg: "rgba(227, 227, 227, 0.15)", color: "#ffffffff" },
             ],
             github: "https://github.com/YashParmar081005/ai-video-rag",
             live: "#",
