@@ -229,8 +229,10 @@ const projectsData = {
             tech: [
                 { name: "RAG", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
                 { name: "LangChain", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
-                { name: "FAISS", bg: "rgba(0,150,200,0.15)", color: "#0096c8" },
-                { name: "PDF", bg: "rgba(220,50,50,0.15)", color: "#dc3232" }
+                { name: "Whisper", bg: "rgba(0,150,200,0.15)", color: "#0096c8" },
+                { name: "ChromaDB", bg: "rgba(220,50,50,0.15)", color: "#badc32ff" },
+                { name: "youtube-dl", bg: "rgba(220,50,50,0.15)", color: "#dc3232" },
+                { name: "servam api", bg: "rgba(227, 227, 227, 0.15)", color: "#000000ff" },
             ],
             github: "https://github.com/YashParmar081005/ai-video-rag",
             live: "#",
