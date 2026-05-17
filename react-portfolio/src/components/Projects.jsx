@@ -237,6 +237,24 @@ const projectsData = {
             github: "https://github.com/YashParmar081005/ai-video-rag",
             live: "#",
             delay: "300"
+        },
+        {
+            id: "ai7",
+            title: "Hybrid RAG",
+            desc: "rag application with hybrid search and multimodal data ingestion",
+            img: "hybridrag.png",
+            icon: "🔍",
+            tech: [
+                { name: "RAG", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
+                { name: "LangChain", bg: "rgba(0,180,120,0.15)", color: "#00b478" },
+                { name: "ChromaDB", bg: "rgba(0,150,200,0.15)", color: "#0096c8" },
+                { name: "groq api", bg: "rgba(255,255,255,0.15)", color: "#ffffffff" },
+                { name: "fast api", bg: "rgba(255,255,255,0.15)", color: "#ffffffff" },
+                { name: "pypdf", bg: "rgba(255,255,255,0.15)", color: "#ffffffff" },
+            ],
+            github: "https://github.com/YashParmar081005/hybrid-RAG",
+            live: "https://www.youtube.com/watch?v=MdBoUSfB50U",
+            delay: "300"
         }
     ],
     miniprojects: [
