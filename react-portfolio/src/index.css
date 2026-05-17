@@ -802,6 +802,53 @@ html[data-theme="light"] .floating-particle {
   box-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
 }
 
+/* Project Card Buttons and Tech Badges Customizations */
+.project-tech-badge {
+  /* Inherits inline styles by default */
+}
+html[data-theme="light"] .project-tech-badge {
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-link-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.project-link-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.project-link-btn-live {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--blue);
+}
+.project-link-btn-live:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="light"] .project-link-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+}
+html[data-theme="light"] .project-link-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] .project-link-btn-live {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--blue);
+}
+html[data-theme="light"] .project-link-btn-live:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 480px) {
   .stat-num {

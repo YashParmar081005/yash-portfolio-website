@@ -330,7 +330,7 @@ const ProjectCard = ({ project }) => (
         <p className="text-gray-400 text-sm mb-4 leading-relaxed">{project.desc}</p>
         <div className="flex flex-wrap gap-2 mb-6 mt-auto">
             {project.tech.map((t, idx) => (
-                <span key={idx} className="px-2 py-1 rounded-md text-xs font-semibold" style={{ background: t.bg, color: t.color, border: t.border }}>
+                <span key={idx} className="project-tech-badge px-2 py-1 rounded-md text-xs font-semibold" style={{ background: t.bg, color: t.color, border: t.border }}>
                     {t.name}
                 </span>
             ))}
@@ -338,13 +338,13 @@ const ProjectCard = ({ project }) => (
         <div className="flex items-center gap-3">
             {project.github && project.github !== '#' && (
                 <a href={project.github} target="_blank" rel="noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-white">
+                    className="project-link-btn flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-bold transition-colors">
                     <FaGithub /> GitHub
                 </a>
             )}
             {project.live && project.live !== '#' && (
                 <a href={project.live} target="_blank" rel="noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-bold bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-[var(--blue)]">
+                    className="project-link-btn-live flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-bold transition-colors">
                     <FaExternalLinkAlt /> {project.live.includes('youtu') || project.live.includes('linkedin') ? 'Video Demo' : 'Live Site'}
                 </a>
             )}
