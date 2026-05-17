@@ -68,7 +68,7 @@ export default function About() {
                 </div>
                 <div className="grid grid-cols-2 gap-3 sm:gap-5" data-aos="fade-left">
                     <div className="glass rounded-2xl p-4 sm:p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="100">
-                        <div className="stat-num gradient-text"><CountUp end={17} /></div>
+                        <div className="stat-num gradient-text"><CountUp end={14} /></div>
                         <div className="text-gray-400 text-sm mt-1">Projects Built</div>
                     </div>
                     <div className="glass rounded-2xl p-4 sm:p-6 text-center counter-card" data-aos="zoom-in" data-aos-delay="200">
