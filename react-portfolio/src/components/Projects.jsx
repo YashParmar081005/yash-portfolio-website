@@ -15,7 +15,7 @@ const projectsData = {
                 { name: "TailwindCSS", bg: "rgba(56,189,248,0.15)", color: "#38bdf8" },
                 { name: "JavaScript", bg: "rgba(247,223,30,0.12)", color: "#e8d44d" }
             ],
-            github: "#",
+            github: "https://github.com/YashParmar081005/Edskills",
             live: "https://dr8zjaeq.insforge.site",
             delay: "100"
         },
