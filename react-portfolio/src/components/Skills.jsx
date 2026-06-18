@@ -43,7 +43,7 @@ const SkillItem = ({ name, percent }) => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#e9dcbe]/5 via-transparent to-[#c9a96a]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
 
             <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 z-10">
-                <svg className="w-full h-full transform -rotate-90 filter drop-shadow-[0_0_8px_rgba(233,220,190,0.2)] group-hover:drop-shadow-[0_0_12px_rgba(233,220,190,0.6)] transition-all duration-300">
+                <svg viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" className="w-full h-full transform -rotate-90 filter drop-shadow-[0_0_8px_rgba(233,220,190,0.2)] group-hover:drop-shadow-[0_0_12px_rgba(233,220,190,0.6)] transition-all duration-300">
                     <circle cx="40" cy="40" r={radius} stroke="currentColor" strokeWidth="4" fill="transparent" className="text-gray-700/30" />
                     <circle cx="40" cy="40" r={radius} stroke="url(#gradient-skill)" strokeWidth="5" strokeLinecap="round" fill="transparent" strokeDasharray={circumference} strokeDashoffset={strokeDashoffset} className="transition-all duration-75 ease-linear" />
                     <defs>

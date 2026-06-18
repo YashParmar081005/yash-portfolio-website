@@ -95,7 +95,7 @@ export default function Navbar({ theme, toggleTheme }) {
         <>
             <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: scrolled ? 'var(--glass-bg)' : (theme === 'dark' ? 'rgba(10, 10, 10, 0.5)' : 'rgba(244, 236, 216, 0.5)'), borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent', boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.12)' : 'none', transition: 'all 0.4s ease' }}>
                 <div style={{ padding: '10px 12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} className="sm:!py-4 sm:!px-6">
-                    <a href="#home" onClick={closeMobileMenu} className="text-base sm:text-xl" style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 'bold', background: 'linear-gradient(135deg, #e9dcbe, #c9a96a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                    <a href="#home" onClick={closeMobileMenu} className="text-base sm:text-xl" style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 'bold', background: theme === 'dark' ? 'linear-gradient(135deg, #e9dcbe, #c9a96a)' : 'linear-gradient(135deg, #5e4a22, #9a7b3f)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none', whiteSpace: 'nowrap' }}>
                         &lt; YASH /&gt;
                     </a>
 
