@@ -20,7 +20,7 @@ export default function BackgroundAnimation({ theme }) {
         const numberOfParticles = 80;
 
         // Base colors for theme
-        const colors = theme === 'dark' ? ['#00d4ff', '#7c3aed', '#06b6d4'] : ['#0096c8', '#8b5cf6', '#0ea5e9'];
+        const colors = theme === 'dark' ? ['#e9dcbe', '#c9a96a', '#d8c39a'] : ['#9a7b3f', '#5e4a22', '#b08d4a'];
 
         let mouse = {
             x: null,
@@ -117,7 +117,7 @@ export default function BackgroundAnimation({ theme }) {
                         // Make connections near mouse brighter
                         const connectAlpha = distToMouse < mouse.radius * 1.5 ? opacityValue * 0.5 : opacityValue * 0.15;
 
-                        ctx.strokeStyle = `rgba(0, 212, 255, ${connectAlpha})`;
+                        ctx.strokeStyle = `rgba(233, 220, 190, ${connectAlpha})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

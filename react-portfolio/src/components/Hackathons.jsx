@@ -13,7 +13,7 @@ export default function Hackathons() {
                     <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
 
                         <div className="hack-card glass-gold rounded-2xl p-5 sm:p-8 relative overflow-hidden" data-aos="fade-right">
-                            <div className="ribbon">TOP 10</div>
+                            
                             <div className="text-4xl sm:text-5xl mb-4">🏆</div>
                             <div className="mono text-xs mb-2" style={{ color: '#f59e0b' }}>HACKATHON</div>
                             <h3 className="text-xl sm:text-2xl font-black mb-1 gradient-text-gold">Hack A Throne</h3>
@@ -38,7 +38,7 @@ export default function Hackathons() {
                         </div>
 
                         <div className="hack-card glass-gold rounded-2xl p-5 sm:p-8 relative overflow-hidden" data-aos="fade-left">
-                            <div className="ribbon">TOP 20</div>
+                           
                             <div className="text-4xl sm:text-5xl mb-4">🏆</div>
                             <div className="mono text-xs mb-2" style={{ color: '#f59e0b' }}>HACKATHON</div>
                             <h3 className="text-xl sm:text-2xl font-black mb-1 gradient-text-gold">OdooXGCET</h3>

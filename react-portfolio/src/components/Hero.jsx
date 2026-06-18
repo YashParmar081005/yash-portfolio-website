@@ -53,11 +53,11 @@ export default function Hero({ theme }) {
                 <div id="hero-btns" className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
                     <a href="#projects"
                         className="hero-btn-primary relative z-10 px-8 py-3 rounded-full font-bold text-white text-sm tracking-wide transition-all hover:scale-105 hover:shadow-lg"
-                        style={{ boxShadow: '0 0 30px rgba(0,212,255,0.3)' }}>
+                        style={{ boxShadow: '0 0 30px rgba(233,220,190,0.3)' }}>
                         <span className="relative z-10">View Projects</span>
                     </a>
                     <a href="#contact"
-                        className="hero-btn-outline px-8 py-3 rounded-full font-bold text-sm tracking-wide text-blue-300">
+                        className="hero-btn-outline px-8 py-3 rounded-full font-bold text-sm tracking-wide text-[var(--blue)]">
                         Contact Me
                     </a>
                 </div>

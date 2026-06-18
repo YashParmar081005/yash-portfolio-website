@@ -10,7 +10,7 @@ export default function Navbar({ theme, toggleTheme }) {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'about', 'projects', 'hackathons', 'techstack', 'skills', 'contact'];
+            const sections = ['home', 'about', 'experience', 'projects', 'hackathons', 'techstack', 'skills', 'contact'];
             let current = '';
             for (const section of sections) {
                 const element = document.getElementById(section);
@@ -47,7 +47,7 @@ export default function Navbar({ theme, toggleTheme }) {
         width: '100%',
         height: '100%',
         zIndex: 99999,
-        background: theme === 'dark' ? '#060610' : '#f0f4f8',
+        background: theme === 'dark' ? '#0a0a0a' : '#f4ecd8',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -63,7 +63,7 @@ export default function Navbar({ theme, toggleTheme }) {
     const linkStyle = {
         fontSize: '24px',
         fontWeight: 700,
-        color: theme === 'dark' ? '#e2e8f0' : '#1a1a2e',
+        color: theme === 'dark' ? '#ece0c4' : '#1c1a14',
         textDecoration: 'none',
         padding: '8px 16px',
     };
@@ -73,7 +73,7 @@ export default function Navbar({ theme, toggleTheme }) {
         top: '16px',
         right: '20px',
         fontSize: '28px',
-        color: theme === 'dark' ? '#e2e8f0' : '#1a1a2e',
+        color: theme === 'dark' ? '#ece0c4' : '#1c1a14',
         background: 'none',
         border: 'none',
         cursor: 'pointer',
@@ -93,15 +93,15 @@ export default function Navbar({ theme, toggleTheme }) {
 
     return (
         <>
-            <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: scrolled ? 'var(--glass-bg)' : (theme === 'dark' ? 'rgba(6, 6, 16, 0.5)' : 'rgba(240, 244, 248, 0.5)'), borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent', boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.12)' : 'none', transition: 'all 0.4s ease' }}>
+            <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: scrolled ? 'var(--glass-bg)' : (theme === 'dark' ? 'rgba(10, 10, 10, 0.5)' : 'rgba(244, 236, 216, 0.5)'), borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent', boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.12)' : 'none', transition: 'all 0.4s ease' }}>
                 <div style={{ padding: '10px 12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} className="sm:!py-4 sm:!px-6">
-                    <a href="#home" onClick={closeMobileMenu} className="text-base sm:text-xl" style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 'bold', background: 'linear-gradient(135deg, #00d4ff, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                    <a href="#home" onClick={closeMobileMenu} className="text-base sm:text-xl" style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 'bold', background: 'linear-gradient(135deg, #e9dcbe, #c9a96a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none', whiteSpace: 'nowrap' }}>
                         &lt; YASH /&gt;
                     </a>
 
                     {/* Desktop nav links */}
                     <div className="hidden lg:flex items-center gap-4 xl:gap-8">
-                        {['Home', 'About', 'Projects', 'Hackathons', 'Tech Stack', 'Skills', 'Contact'].map(item => {
+                        {['Home', 'About', 'Experience', 'Projects', 'Hackathons', 'Tech Stack', 'Skills', 'Contact'].map(item => {
                             const hash = `#${item.toLowerCase().replace(' ', '')}`;
                             return (
                                 <a key={item} href={hash}
@@ -115,7 +115,7 @@ export default function Navbar({ theme, toggleTheme }) {
                     {/* Desktop social icons */}
                     <div className="hidden lg:flex items-center gap-3">
                         <button
-                            className="theme-toggle w-[42px] h-[42px] rounded-full border-2 border-[var(--glass-border)] bg-[var(--glass-bg)] backdrop-blur-[10px] cursor-pointer flex items-center justify-center text-[1.15rem] transition-all duration-300 text-[var(--text-primary)] hover:border-[var(--blue)] hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] hover:scale-110"
+                            className="theme-toggle w-[42px] h-[42px] rounded-full border-2 border-[var(--glass-border)] bg-[var(--glass-bg)] backdrop-blur-[10px] cursor-pointer flex items-center justify-center text-[1.15rem] transition-all duration-300 text-[var(--text-primary)] hover:border-[var(--blue)] hover:shadow-[0_0_15px_rgba(233,220,190,0.3)] hover:scale-110"
                             onClick={toggleTheme} title="Toggle theme">
                             {theme === 'dark' ? <FaMoon /> : <FaSun className="text-yellow-500" />}
                         </button>
@@ -145,7 +145,7 @@ export default function Navbar({ theme, toggleTheme }) {
                         </button>
                         <button
                             onClick={toggleMobileMenu}
-                            style={{ background: 'var(--glass-bg)', border: '2px solid var(--glass-border)', borderRadius: '10px', width: 38, height: 38, minWidth: 38, minHeight: 38, fontSize: '20px', color: theme === 'dark' ? '#e2e8f0' : '#1a1a2e', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(10px)' }}>
+                            style={{ background: 'var(--glass-bg)', border: '2px solid var(--glass-border)', borderRadius: '10px', width: 38, height: 38, minWidth: 38, minHeight: 38, fontSize: '20px', color: theme === 'dark' ? '#ece0c4' : '#1c1a14', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(10px)' }}>
                             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
                         </button>
                     </div>
@@ -159,7 +159,7 @@ export default function Navbar({ theme, toggleTheme }) {
                         <FaTimes />
                     </button>
 
-                    {['Home', 'About', 'Projects', 'Hackathons', 'Tech Stack', 'Skills', 'Contact'].map(item => (
+                    {['Home', 'About', 'Experience', 'Projects', 'Hackathons', 'Tech Stack', 'Skills', 'Contact'].map(item => (
                         <a
                             key={item}
                             href={`#${item.toLowerCase().replace(' ', '')}`}

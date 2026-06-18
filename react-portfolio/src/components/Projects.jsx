@@ -7,7 +7,7 @@ const projectsData = {
             id: "fs5",
             title: "EdSkill LMS Platform",
             desc: "A full-stack Learning Management System with separate dashboards for students and instructors. Instructors create and manage courses, lessons & content, while students browse, enroll, and track their learning progress — backed by secure authentication and a real-time database.",
-            img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+            img: "edskill.png",
             icon: "🎓",
             tech: [
                 { name: "React", bg: "rgba(97,218,251,0.15)", color: "#61dafb" },

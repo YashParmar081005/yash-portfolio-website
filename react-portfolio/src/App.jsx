@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Hackathons from './components/Hackathons';
 import TechStack from './components/TechStack';
@@ -49,6 +50,7 @@ function App() {
       <main>
         <Hero theme={theme} />
         <About />
+        <Experience />
         <Projects />
         <Hackathons />
         <TechStack />

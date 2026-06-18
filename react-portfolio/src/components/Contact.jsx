@@ -145,7 +145,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 disabled={sending}
-                                className="hero-btn-primary w-full py-4 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg hover:shadow-[0_0_20px_rgba(0,212,255,0.4)] transition-all border-none disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="hero-btn-primary w-full py-4 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg hover:shadow-[0_0_20px_rgba(233,220,190,0.4)] transition-all border-none disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 {sending ? (
                                     <>Sending... <FaSpinner className="animate-spin" /></>
@@ -215,7 +215,7 @@ export default function Contact() {
                     <div className="mono text-xl font-bold gradient-text mb-6">&lt; Portfolio /&gt;</div>
 
                     <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm font-medium text-[var(--text-secondary)]">
-                        {['Home', 'About', 'Projects', 'Hackathons', 'Tech Stack', 'Skills', 'Contact'].map(item => (
+                        {['Home', 'About', 'Experience', 'Projects', 'Hackathons', 'Tech Stack', 'Skills', 'Contact'].map(item => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase().replace(' ', '')}`}
