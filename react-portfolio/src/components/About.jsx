@@ -41,7 +41,7 @@ const CountUp = ({ end, duration = 2000 }) => {
 export default function About() {
     return (
         <section id="about" className="px-4 sm:px-6 md:px-16 lg:px-24 py-16 sm:py-24">
-            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div data-aos="fade-right">
                     <p className="mono text-sm mb-3" style={{ color: 'var(--blue)' }}>// about me</p>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 section-title">Who Am I?</h2>

@@ -4,6 +4,22 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const projectsData = {
     fullstack: [
         {
+            id: "fs5",
+            title: "EdSkill LMS Platform",
+            desc: "A full-stack Learning Management System with separate dashboards for students and instructors. Instructors create and manage courses, lessons & content, while students browse, enroll, and track their learning progress — backed by secure authentication and a real-time database.",
+            img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+            icon: "🎓",
+            tech: [
+                { name: "React", bg: "rgba(97,218,251,0.15)", color: "#61dafb" },
+                { name: "InsForge", bg: "rgba(99,102,241,0.15)", color: "#818cf8" },
+                { name: "TailwindCSS", bg: "rgba(56,189,248,0.15)", color: "#38bdf8" },
+                { name: "JavaScript", bg: "rgba(247,223,30,0.12)", color: "#e8d44d" }
+            ],
+            github: "#",
+            live: "https://dr8zjaeq.insforge.site",
+            delay: "100"
+        },
+        {
             id: "fs1",
             title: "Upasana SmartRead",
             desc: "A smart library management system for digital & physical book tracking with user dashboards.",

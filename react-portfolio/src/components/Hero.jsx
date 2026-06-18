@@ -37,7 +37,7 @@ export default function Hero({ theme }) {
     }, [typedText, isDeleting, loopNum, typingSpeed, words]);
 
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden py-24 sm:py-20">
             <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                 <div id="hero-greeting" className="text-gray-400 mono text-lg mb-2">Hello World! 👋</div>
                 <h1 id="hero-title" className="text-3xl sm:text-5xl md:text-7xl font-black mb-4 leading-tight">

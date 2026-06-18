@@ -168,7 +168,7 @@ export default function Skills() {
                         {/* AI / ML */}
                         <div data-aos="fade-left" data-aos-delay="100">
                             <h3 className="text-xl font-bold mb-6 flex items-center gap-3 pb-3 border-b border-white/5 mt-4 lg:mt-0">
-                                <span className="p-2 rounded-lg bg-white/5">�</span>
+                                <span className="p-2 rounded-lg bg-white/5">🤖</span>
                                 <span className="gradient-text tracking-wide">AI / ML</span>
                             </h3>
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
